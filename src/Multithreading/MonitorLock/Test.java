@@ -1,4 +1,4 @@
-package Multithreading.Lock;
+package Multithreading.MonitorLock;
 
 public class Test{
     public synchronized void task1() {
