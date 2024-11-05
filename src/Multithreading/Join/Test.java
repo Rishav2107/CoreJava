@@ -17,7 +17,10 @@ public class Test {
             System.out.println("Thread1 calling produce method");
             obj.display();
         });
+        t.setDaemon(true);
         t.start();
+        t.setPriority(10);
+
         try {
             t.join();
         } catch (InterruptedException e) {
